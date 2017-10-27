@@ -1,3 +1,4 @@
+$('.modal').modal();
 $('.login').on('click', () => {
   location.href = '#top';
   $('#signin').removeClass('hide');

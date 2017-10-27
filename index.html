@@ -14,9 +14,10 @@
 </head>
 
 <body>
-  <section class="v-align show hide" id="signin">
-    <form action="" method="post" class="col card s10 push-s1 m8 push-m2">
-      <div class="card-content">
+   <div id="signin-modal" class="modal">
+    <div class="modal-content">
+      <h5 class="center-align" id="title"></h5>
+    <form class = "row">
         <span class="card-title truncate">Login to Your Account</span>
         <div class="row">
           <div class="input-field col s12">
@@ -36,14 +37,15 @@
             Don't have an account? <a class="signup red-text text-lighten-2 center">Sign Up</a>
           </div>
         </div>
-      </div>
     </form>
-  </section>
-  <section class="v-align show hide" id="signup">
-    <form action="" method="post" class="col card s10 pull-s1 m6 pull-m2">
-      <div class="card-content">
-        <span class="card-title truncate">Sign Up for an Account</span>
-        <div class="row">
+  </div>
+</div>
+</form>
+   <div id="signup-modal" class="modal">
+    <div class="modal-content">
+      <h5 class="center-align" id="title"></h5>
+    <form class = "row">
+        <span class="card-title center">Sign Up for an Account</span>
           <div class="input-field col s12">
             <label for="name"><i class="material-icons">person</i>Full Name</label>
             <input type="text" class="validate" name="name" id="name" />
@@ -72,9 +74,9 @@
             Already have an account? <a class="login red-text text-lighten-2 center">LogIn</a>
           </div>
         </div>
-      </div>
     </form>
-  </section>
+  </div>
+</div>
   <header>
     <a name='top'></a>
     <div class="navbar-fixed">
@@ -83,8 +85,8 @@
           <a href="index.html"class="brand-logo center truncate">More-Recipes</a>
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li class = "active"><a class="login">Login</a></li>
-            <li><a class="signup">Sign Up</a></li>
+            <li><a class="login clickable modal-trigger" href="#signin-modal">Login</a></li>
+            <li><a class="signup clickable modal-trigger" href="#signup-modal">Sign Up</a></li>
 
             
           </ul>
@@ -98,6 +100,8 @@
   </header>
 
   <main>
+
+  
     <div class="parallax-container">
       <div class="parallax"><img  class="responsive-img" src="images/porridge.jpg" ></div>
       <h5 class="white-text v-align center-align">Food brings people together on many different levels. It's nourishment of the soul and body; it's truly love.
@@ -106,7 +110,7 @@
 
      <div class="white row container">
       <h3 class="header">More-Recipes</h3>
-      <p class="red-text text-lighten-2 center text-darken-3 lighten-3"> More-Recipes is your social media for connecting with wonderful delicacies! </p>
+      <p class="red-text text-lighten-2"> More-Recipes is your social media for connecting with wonderful delicacies! </p>
       <ul>
         <li class="red-text text-lighten-2"> * Share your recipe ideas and inventions with the world</li>
         <li class="red-text text-lighten-2"> * Try something new from others' recipe ideas </li>
@@ -118,7 +122,7 @@
     <div class="recipes grey lighten-5">
       <div class="row container ">
         <div class="center-align">
-          <span class="full-title red-text">Featured Recipes</span>
+          <span class="full-title">Featured Recipes</span>
           <div class="rounded-line"></div>
         </div>
         <div class="col s12 m6 l4">
@@ -133,7 +137,7 @@
             </div>
             <div class="card-action vote_details">
               <div class="left">
-                <i class="material-icons blue-text">thumb_up</i> <span>&nbsp;415</span>
+                <i class="material-icons green-text">thumb_up</i> <span>&nbsp;415</span>
               </div>
               <div class="right">
                 <i class="material-icons red-text">thumb_down</i><span>&nbsp;29&nbsp;</span>
@@ -154,7 +158,7 @@
             </div>
             <div class="card-action vote_details">
               <div class="left">
-                <i class="material-icons blue-text">thumb_up</i>&nbsp;214
+                <i class="material-icons green-text">thumb_up</i>&nbsp;214
               </div>
               <div class="right">
                 <i class="material-icons red-text">thumb_down</i>&nbsp;17&nbsp;&nbsp;
@@ -176,7 +180,7 @@
             </div>
             <div class="card-action vote_details">
               <div class="left">
-                <i class="material-icons blue-text">thumb_up</i> <span>&nbsp;90</span>
+                <i class="material-icons green-text">thumb_up</i> <span>&nbsp;90</span>
               </div>
               <div class="right">
                 <i class="material-icons red-text">thumb_down</i><span>&nbsp;10&nbsp;&nbsp;</span>
@@ -196,7 +200,7 @@
             </div>
             <div class="card-action vote_details">
               <div class="left">
-                <i class="material-icons blue-text">thumb_up</i> <span>&nbsp;105</span>
+                <i class="material-icons green-text">thumb_up</i> <span>&nbsp;105</span>
               </div>
               <div class="right">
                 <i class="material-icons red-text">thumb_down</i><span>&nbsp;13&nbsp;&nbsp;</span>
@@ -217,7 +221,7 @@
             </div>
             <div class="card-action vote_details">
               <div class="left">
-                <i class="material-icons blue-text">thumb_up</i> <span>&nbsp;346</span>
+                <i class="material-icons green-text">thumb_up</i> <span>&nbsp;346</span>
               </div>
               <div class="right">
                 <i class="material-icons red-text">thumb_down</i><span>&nbsp;8&nbsp;&nbsp;</span>
@@ -238,7 +242,7 @@
             </div>
             <div class="card-action vote_details">
               <div class="left">
-                <i class="material-icons blue-text">thumb_up</i> <span>&nbsp;154</span>
+                <i class="material-icons green-text">thumb_up</i> <span>&nbsp;154</span>
               </div>
               <div class="right">
                 <i class="material-icons red-text">thumb_down</i><span>&nbsp;3&nbsp;&nbsp;</span>
@@ -259,8 +263,8 @@
         <div class="col l4 offset-l2 s12">
           <h5 class="white-text">Project External links</h5>
           <ul>
-            <li><a class="grey-text text-lighten-3" href="https://github.com/larrystone/BC-26-More-Recipes">Github</a></li>
-            <li><a class="grey-text text-lighten-3" href="https://www.pivotaltracker.com/n/projects/2096195">Pivotal Tracker</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://github.com/lekzzy/More-Recipes/tree/development">Github</a></li>
+           >
           </ul>
         </div>
       </div>
